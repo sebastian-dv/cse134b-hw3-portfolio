@@ -1,12 +1,20 @@
 
 :root {
+  --border-radius: 0.5rem;
+  --shadow-blur: 0.4rem;
+  --shadow-spread: 0.1rem;
+}
 
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
 
   header {
-
+    padding: 1rem;
+    margin: 1rem;
   }
 
   main {
@@ -17,10 +25,10 @@ body {
     custom-section {
       display: block;
       background-color: white;
-      border-radius: 8px;
-      box-shadow: 0px 0px 5px 3px lightgray;
-      padding: 20px;
-      margin: 20px;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) lightgray;
+      padding: 1rem;
+      margin: 1rem;
     }
   }
 }
