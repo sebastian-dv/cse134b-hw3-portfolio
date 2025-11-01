@@ -1,20 +1,49 @@
 
 :root {
   --border-radius: 0.5rem;
-  --shadow-blur: 0.4rem;
-  --shadow-spread: 0.1rem;
+  --shadow-blur: 0.3rem;
+  --shadow-spread: 0.2rem;
+
+  --default-purple: #9b9be7;
+  --light-purple: #d9d9f6;
 }
 
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
 body {
-
   header {
-    padding: 1rem;
-    margin: 1rem;
+    display: flex;
+    background-color: var(--light-purple);
+    padding: 2rem 6rem;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      display: flex;
+      gap: 2rem;
+      a {
+        color: black;
+        text-decoration: none;
+        background-color: white;
+        padding: 0.5rem 2rem;
+        border-radius: var(--border-radius);
+      }
+      a:hover {
+        background-color: gray;
+        color: white;
+      }
+      a:active {
+        background-color: var(--default-purple);
+        color: white;
+      }
+    }
+  }
+
+  hr {
+    color: lightgray
   }
 
   main {
@@ -25,7 +54,7 @@ body {
     custom-section {
       display: block;
       background-color: white;
-      border-radius: 0.5rem;
+      border-radius: var(--border-radius);
       box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) lightgray;
       padding: 1rem;
       margin: 1rem;
