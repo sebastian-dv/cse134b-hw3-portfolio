@@ -7,6 +7,8 @@
   --page-padding-x: 22rem;
   --page-padding-y: 2rem;
 
+  --header-height: 10vh;
+
   --default-purple: #9b9be7;
   --light-purple: #d9d9f6;
 }
@@ -20,6 +22,7 @@
 body {
   header {
     display: flex;
+    height: var(--header-height);
     background-color: var(--light-purple);
     padding: var(--page-padding-y) var(--page-padding-x);
     justify-content: space-between;
@@ -52,7 +55,10 @@ body {
   main {
     padding: var(--page-padding-y) var(--page-padding-x);
     #landing-section {
-
+      height: calc(100vh - var(--header-height));
+      h2 {
+        font-size: 8rem;
+      }
     }
     .card {
       background-color: white;
