@@ -4,6 +4,9 @@
   --shadow-blur: 0.3rem;
   --shadow-spread: 0.2rem;
 
+  --page-padding-x: 22rem;
+  --page-padding-y: 2rem;
+
   --default-purple: #9b9be7;
   --light-purple: #d9d9f6;
 }
@@ -18,7 +21,7 @@ body {
   header {
     display: flex;
     background-color: var(--light-purple);
-    padding: 2rem 8rem;
+    padding: var(--page-padding-y) var(--page-padding-x);
     justify-content: space-between;
     align-items: center;
     nav {
@@ -47,6 +50,7 @@ body {
   }
 
   main {
+    padding: var(--page-padding-y) var(--page-padding-x);
     #landing-section {
 
     }
@@ -55,7 +59,6 @@ body {
       border-radius: var(--border-radius);
       box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) lightgray;
       padding: 2rem;
-      margin: 2rem 8rem;
     }
   }
 }
