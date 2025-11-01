@@ -18,7 +18,7 @@ body {
   header {
     display: flex;
     background-color: var(--light-purple);
-    padding: 2rem 6rem;
+    padding: 2rem 8rem;
     justify-content: space-between;
     align-items: center;
     nav {
@@ -47,17 +47,15 @@ body {
   }
 
   main {
-    section {
-      border: solid;
-    }
+    #landing-section {
 
-    custom-section {
-      display: block;
+    }
+    .card {
       background-color: white;
       border-radius: var(--border-radius);
       box-shadow: 0 0 var(--shadow-blur) var(--shadow-spread) lightgray;
-      padding: 1rem;
-      margin: 1rem;
+      padding: 2rem;
+      margin: 2rem 8rem;
     }
   }
 }
