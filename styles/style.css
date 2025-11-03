@@ -109,11 +109,6 @@ body {
       align-items: center;
       gap: 2rem;
     }
-    #projects {
-      display: grid;
-      grid-template-columns: auto auto auto;
-      gap: 2rem;
-    }
   }
   main#about {
     display: flex;
@@ -130,6 +125,13 @@ body {
     }
     ol {
       list-style: none;
+    }
+  }
+  main#projects {
+    #project-showcase {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 2rem;
     }
   }
   main#contact {
@@ -169,5 +171,3 @@ body {
     }
   }
 }
-
-
