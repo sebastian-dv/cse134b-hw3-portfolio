@@ -13,12 +13,18 @@
 <body>
 
   <header>
-    <h1>Sebastian Diaz</h1>
+    <div id="header-top">
+      <h1>Sebastian Diaz</h1>
+      <label for="hamburger">&#9776</label>
+    </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="pages/about.html">About</a>
-      <a href="pages/projects.html">Projects</a>
-      <a href="pages/contact.html">Contact</a>
+      <input type="checkbox" id="hamburger">
+      <ul id="hamburger-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 

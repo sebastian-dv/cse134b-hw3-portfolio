@@ -12,12 +12,18 @@
 <body>
 
   <header>
-    <h1>Sebastian Diaz</h1>
+    <div id="header-top">
+      <h1>Sebastian Diaz</h1>
+      <label for="hamburger">&#9776</label>
+    </div>
     <nav>
-      <a href="../index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <input type="checkbox" id="hamburger">
+      <div id="hamburger-items">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </nav>
   </header>
 
@@ -26,7 +32,9 @@
   <main id="contact">
     <form class="card">
       <fieldset>
-        <legend><h2>Send me a message</h2></legend>
+        <legend>
+          <h2>Send me a message</h2>
+        </legend>
         <hr>
         <div>
           <label for="name">Name</label><br>
