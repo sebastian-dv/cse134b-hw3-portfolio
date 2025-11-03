@@ -147,6 +147,17 @@ body {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      .project-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        picture {
+          width: 80%;
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
   }
   main#contact {
@@ -259,6 +270,10 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+        .project-content {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
     main#contact {
