@@ -202,6 +202,14 @@ body {
       }
     }
   }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2vh 2vw;
+    background-color: light-dark(var(--light-purple), #98971a);
+  }
 }
 
 @media (min-width: 768px) {
